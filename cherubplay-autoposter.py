@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from pyvirtualdisplay import Display
@@ -18,7 +19,7 @@ def main():
     username_field.send_keys(username)
     password_field.send_keys(password)
     login_button.click()
-    sleep(2) 
+    sleep(5) 
     prompt_button = browser.find_element_by_xpath('//button[@class="prompt_button"]')
     prompt_button.click()
     
@@ -29,10 +30,10 @@ def main():
         select.select_by_index(i)
         post_button = browser.find_element_by_id('post_button')
         post_button.click()
-        sleep(1)
+        sleep(5)
         home_link = browser.find_element_by_id('nav_home')
         home_link.send_keys(Keys.LEFT_CONTROL + Keys.ENTER)
-        sleep(1)
+        sleep(5)
         browser.switch_to.window(browser.window_handles[i+1])
     
     print("All prompts posted. To terminate the program and take them down, press Enter.")    
