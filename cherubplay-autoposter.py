@@ -38,7 +38,7 @@ def main():
     
     print("All prompts posted. To terminate the program and take them down, press Enter.")    
     input()
-
+    browser.quit()
     display.stop()
 
 if __name__ == "__main__":main()
