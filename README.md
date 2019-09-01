@@ -1,10 +1,10 @@
-# Apharius' Cherubplay Auto-poster
+# Apharius' Cherp Auto-poster
 
-A basic script for automatically posting all your Cherubplay prompts.
+A basic script for automatically posting all your Cherp prompts.
 
 ## What is it?
 It's a simple Python script that creates a web browser and automates the keypresses needed to post all your saved 
-Cherubplay prompts to the front page. Keep in mind that I mainly wrote this script for myself.
+Cherp prompts to the front page. Keep in mind that I mainly wrote this script for myself.
 
 ## Installation
 ### Prerequisites;
@@ -23,7 +23,7 @@ This will install the necessary packages for the script to run.
 installation, changing it if necessary.
 
 ## Running the script
-In a terminal, step into this repository's location and issue the command `python cherubplay-autoposter.py` to run the script. Enter your Cherubplay username
+In a terminal, step into this repository's location and issue the command `python cherp-autoposter.py` to run the script. Enter your Cherp username
 and password when prompted. A Chrome window will open and the script will post all your saved prompts to the front page.
 
 ## Q & A
@@ -33,7 +33,7 @@ and password when prompted. A Chrome window will open and the script will post a
 
 **Q: Will you extend functionality to include directory requests?**
 
-**A:** Short answer: No. Long answer: Maybe, but I'm probably not going to release that part to the public. It runs the risk of getting spammy all too fast.
+**A:** I already have. However, I am not releasing it to the public. The chaos that would cause is not something I want to be responsible for.
 
 **Q: Do you accept suggestions from others?**
 

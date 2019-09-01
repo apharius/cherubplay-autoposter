@@ -7,15 +7,11 @@ from selenium.webdriver.common.keys import Keys
 def main():
     username = input('Username: ')
     password = input('Password: ')
-    site = input('Site (defaults to Cherubplay):')
-    url = 'https://cherubplay.co.uk'
-    if site.lower() == 'cherp':
-        url = 'https://wwww.cherp.chat'
     display = Display(visible=1,size=(1366,768))
     display.start()
 
     browser = webdriver.Chrome('/usr/bin/chromedriver')
-    browser.get(url)
+    browser.get('https://www.cherp.chat')
     username_field = browser.find_element_by_xpath('//form[@action="/log-in/"]/p/input[@name="username"]')
     password_field = browser.find_element_by_xpath('//form[@action="/log-in/"]/p/input[@name="password"]')
     login_button = browser.find_element_by_xpath('//form[@action="/log-in/"]/p/button')
